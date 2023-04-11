@@ -8,8 +8,10 @@
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "weaviate-ts-client": "^1.0.0"
   }
 }

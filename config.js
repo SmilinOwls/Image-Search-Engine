@@ -1,5 +1,5 @@
 const schemaConfig = {
-    'class': 'Meme',
+    'class': 'QuoteCelebrity',
     'vectorizer': 'img2vec-neural',
     'vectorIndexType': 'hnsw',
     'moduleConfig': {
