@@ -1,4 +1,5 @@
 import weaviate from 'weaviate-ts-client'
+import {schemaConfig} from './config'
 
 const client = weaviate.client({
     scheme: 'https',
@@ -7,4 +8,6 @@ const client = weaviate.client({
 
 const schemaGetter = async () => {return await client.schema.getter().do(); }
 
-console.log(schemaGetter)
+const schemaClassCreator = async () => {return await client.schema.classCreator().withClass(schemaConfig).do()}
+
+
